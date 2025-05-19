@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yaasiin's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f4f8;
+            margin: 0;
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-container {
+            width: 100%;
+            max-width: 800px;
+            position: relative;
+        }
+
+        .card {
+            background: white;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            width: 100%;
+        }
+
+        .who-i-am {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items:center;
+            position: relative;
+            z-index: 3;
+            margin-bottom: -60px;
+            /* يجعلها تلمس القسم الثاني */
+        }
+
+        .profile-image {
+            width: 200px;
+            border-radius: 12px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .info h2 {
+            margin-top: 0;
+            color: #1a1a1a;
+        }
+
+        .info p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #8000ff;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .school-section {
+            margin-top: 0;
+            z-index: 1;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .text-paragraph {
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- Who I am Section (floating) -->
+        <div class="card who-i-am">
+            <img class="profile-image" src="me_Home.jpg" alt="Profile Photo" />
+            <div class="info">
+                <h2>Who I am</h2>
+                <p>I'm Yaasiin Abdi Ahmed, a Computer Science student at Somali National University with a passion for
+                    technology, coding, and innovation.</p>
+                <p>I enjoy building tech solutions and continuously improving my skills in programming and web
+                    development.</p>
+                <a class="btn" href="#">My Project</a>
+            </div>
+        </div>
+
+        <!-- School I Graduated From Section -->
+        <div class="card school-section">
+            <div class="section-title">School I Graduated From</div>
+            <div class="text-paragraph">
+                I started my education at Ileys School, then joined House School. I completed both my secondary and high
+                school education at Marwazi School in the Guuta neighborhood of Dayniile district.
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
